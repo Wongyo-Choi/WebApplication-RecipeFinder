@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipes</title>
+	<link rel="stylesheet" type="text/css" href="recipes.css">
+</head>
+<body>
+	<nav class="navigation">
+		<a href="../index.php" style="color: rgb(252, 196, 45); margin-top:10px; font-size: 1.75vw;">< Home</a>
+
+		<form class="form" method = "POST" action="flaggedRecipes.php">
+			<button type="submit" name="flagsIn" value="1000000">Dairy Free</button>
+		</form>
+		<form class="form" method = "POST" action="flaggedRecipes.php">
+			<button type="submit" name="flagsIn" value="0100000">Egg Allergy</button>
+		</form>
+		<form class="form" method = "POST" action="flaggedRecipes.php">
+			<button type="submit" name="flagsIn" value="0010000">Gluten Free</button>
+		</form>
+		<form class="form" method = "POST" action="flaggedRecipes.php">
+			<button type="submit" name="flagsIn" value="0001000">Halal</button>
+		</form>
+		<form class="form" method = "POST" action="flaggedRecipes.php">
+			<button type="submit" name="flagsIn" value="0000100">Nut Allergy</button>
+		</form>
+		<form class="form" method = "POST" action="flaggedRecipes.php">
+			<button type="submit" name="flagsIn" value="0000010">Vegan</button>
+		</form>
+		<form class="form" method = "POST" action="flaggedRecipes.php">
+			<button type="submit" name="flagsIn" value="0000001">Vegetarian</button>
+		</form>
+	</nav>
+
+	<div class="recipe-image">
+		<a href='../search-results-page/method.php?recipeId=1' id="img1">
+            <img src="db_images/1.jpg" class="img" id="img1">
+        </a>
+		<a href='../search-results-page/method.php?recipeId=2' id="img2">
+            <img src="db_images/2.jpg" class="img" id="img2">
+        </a>
+	</div>
+
+<script src="recipes.js" ></script>
+
+</body>
+</html>
